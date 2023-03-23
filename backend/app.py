@@ -6,7 +6,7 @@ import openai
 from io import BytesIO
 import json
 
-OPENAI_API_KEY = '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'
+OPENAI_API_KEY = '<YOUR OPENAI API KEY HERE>'
 openai.api_key = OPENAI_API_KEY
 
 app = Flask(__name__)
