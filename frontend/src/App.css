@@ -5,6 +5,8 @@ body {
   margin: 0;
   background-color: #1c1c1e;
   color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .App {
@@ -31,6 +33,9 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
@@ -40,7 +45,15 @@ form {
 }
 
 form div {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+form p {
+  margin: 5px 0;
+  font-size: 14px;
 }
 
 label {
@@ -90,4 +103,18 @@ h2 {
 
 .scrollable-content p {
   margin: 0;
+}
+
+button.download-btn {
+  display: block;
+  margin-top: 15px;
+  background-color: #3f3f3f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button.download-btn:hover {
+  background-color: #4caf50;
 }
